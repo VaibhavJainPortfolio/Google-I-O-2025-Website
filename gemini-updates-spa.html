@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google I/O 2025: Gemini Updates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Visualization & Content Choices:
+        - Overall Intro: Text block. Goal: Inform about core upgrades. Method: HTML paragraph. Justification: Sets context for model improvements.
+        - DeepThink: Text block. Goal: Explain new capability. Method: HTML paragraph. Justification: Describes a key advancement.
+        - Flash: Text block. Goal: Explain efficiency improvements. Method: HTML paragraph. Justification: Highlights practical benefits.
+        - Security: Text block. Goal: Inform about safety. Method: HTML paragraph. Justification: Addresses an important aspect of AI development.
+        - Performance Chart: Bar chart. Goal: Illustrate relative performance/efficiency. Method: Chart.js (Canvas). Justification: Provides a visual comparison of model capabilities.
+        - External Links: List of links. Goal: Provide resources. Method: HTML list. Justification: Centralized access to official information.
+        - CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+</head>
+<body class="bg-stone-100 text-stone-800 min-h-screen flex flex-col items-center antialiased">
+
+    <header class="w-full bg-sky-700 text-white p-5 md:p-6 text-center shadow-lg sticky top-0 z-50">
+        <h1 class="text-2xl sm:text-3xl font-bold">Google I/O 2025: Gemini Updates</h1>
+    </header>
+
+    <nav class="w-full bg-sky-800 shadow-md z-40">
+        <div class="container mx-auto px-4 py-3">
+            <div id="main-nav" class="flex flex-wrap justify-center gap-x-4 gap-y-2 overflow-x-auto pb-2">
+                </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-6 lg:p-8 max-w-5xl w-full mt-4">
+
+        <section id="intro" class="bg-white p-6 rounded-xl shadow-xl mb-8 ring-1 ring-black ring-opacity-5">
+            <h2 class="text-2xl font-semibold text-sky-600 mb-4">Advancements in the Gemini Family of Models</h2>
+            <p class="text-lg mb-3 leading-relaxed">
+                Google I/O 2025 brought significant upgrades to the core Gemini models, specifically Gemini 2.5 Pro and Gemini 2.5 Flash. These enhancements are designed to make the models more powerful, efficient, and versatile across a wide range of applications.
+            </p>
+            <p class="text-lg leading-relaxed">
+                The improvements span reasoning capabilities, multimodality (understanding and generating content across different formats), code generation, and long-context understanding, solidifying Gemini's position as a leading AI model.
+            </p>
+        </section>
+
+        <section id="features" class="space-y-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-sky-700 mb-6 text-center">Key Highlights of Gemini Updates</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                    <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                        <span class="text-2xl mr-3">🧠</span> Gemini 2.5 Pro with DeepThink
+                    </h3>
+                    <p class="text-stone-600 leading-relaxed">
+                        An experimental and highly advanced reasoning mode, DeepThink, is integrated with Gemini 2.5 Pro. This makes the model exceptionally adept at tackling complex mathematical problems and intricate coding challenges, pushing the boundaries of AI's analytical capabilities.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                    <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                        <span class="text-2xl mr-3">⚡</span> Gemini 2.5 Flash: Efficiency & Performance
+                    </h3>
+                    <p class="text-stone-600 leading-relaxed">
+                        Gemini 2.5 Flash has been further optimized for efficiency and cost-effectiveness. It delivers high-quality outputs while being more efficient, requiring fewer tokens for responses. This makes it a powerful choice for applications where speed and resource management are critical.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                    <span class="text-2xl mr-3">🔒</span> Enhanced Security Safeguards
+                </h3>
+                <p class="mb-4 text-stone-600 leading-relaxed">
+                    Both Gemini 2.5 Pro and 2.5 Flash models are receiving new capabilities, including improved security safeguards. This advanced security approach significantly increases protection against indirect prompt injection attacks during tool use, making Gemini 2.5 the most secure model family to date.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                    <span class="text-2xl mr-3">📈</span> Illustrative Model Performance
+                </h3>
+                <p class="mb-4 text-stone-600 leading-relaxed">
+                    While precise benchmark numbers are complex, this chart illustrates the conceptual improvements in reasoning and efficiency across Gemini models.
+                </p>
+                <div class="chart-container bg-stone-50 p-3 rounded-lg shadow-inner">
+                    <canvas id="geminiPerformanceChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="bg-white p-6 rounded-xl shadow-xl mt-10 ring-1 ring-black ring-opacity-5">
+            <h2 class="text-2xl font-semibold text-sky-600 mb-4">Demos & Further Reading</h2>
+            <ul class="list-none space-y-3">
+                <li>
+                    <a href="https://blog.google/technology/developers/google-ai-developer-updates-io-2025/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">📰</span> Google Blog: Building with AI: highlights for developers at Google I/O
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://timesofindia.indiatimes.com/technology/tech-news/the-10-biggest-announcements-at-google-i/o-2025/articleshow/121300646.cms" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">🗞️</span> The Times of India: The 10 biggest announcements at Google I/O 2025
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="w-full bg-sky-800 text-white p-6 text-center mt-12">
+        <p class="text-sm">© 2025 - Interactive Recap of Google I/O AI Mode in Search. For informational purposes.</p>
+    </footer>
+
+    <script>
+        const navLinksData = [
+            { title: 'Gemini & AI Everywhere', file: 'gemini-ai-everywhere-spa.html' },
+            { title: 'Gemini Updates', file: 'gemini-updates-spa.html' },
+            { title: 'AI Mode in Search', file: 'ai-mode-search-spa.html' },
+            { title: 'Google Beam', file: 'google-beam-spa.html' },
+            { title: 'Generative AI for Creators', file: 'generative-ai-creators-spa.html' },
+            { title: 'Android XR', file: 'android-xr-spa.html' },
+            { title: 'Gemini Live', file: 'gemini-live-spa.html' },
+            { title: 'AI Subscriptions', file: 'ai-subscriptions-spa.html' },
+            { title: 'Workspace & Tools', file: 'workspace-tools-spa.html' },
+            { title: 'Developer Tools', file: 'developer-tools-spa.html' },
+            { title: 'Healthcare AI', file: 'healthcare-ai-spa.html' },
+            { title: 'Other Mentions', file: 'other-mentions-spa.html' },
+            { title: 'The Future is AI-Powered', file: 'future-ai-powered-spa.html' }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainNav = document.getElementById('main-nav');
+            const currentFileName = window.location.pathname.split('/').pop();
+
+            navLinksData.forEach(link => {
+                const a = document.createElement('a');
+                a.href = link.file;
+                a.textContent = link.title;
+                a.classList.add('nav-link', 'block', 'px-3', 'py-2', 'rounded-md', 'text-sm', 'font-medium', 'text-white', 'hover:bg-sky-600', 'transition-colors', 'duration-200', 'whitespace-nowrap');
+                if (link.file === currentFileName) {
+                    a.classList.add('bg-sky-600', 'font-bold');
+                }
+                mainNav.appendChild(a);
+            });
+
+            const ctx = document.getElementById('geminiPerformanceChart').getContext('2d');
+            if (ctx) {
+                const geminiPerformanceChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Gemini 1.5 Pro', 'Gemini 2.5 Flash', 'Gemini 2.5 Pro (DeepThink)'],
+                        datasets: [{
+                            label: 'Conceptual Performance Index',
+                            data: [75, 88, 95],
+                            backgroundColor: [
+                                'rgba(2, 132, 199, 0.6)',
+                                'rgba(14, 165, 233, 0.6)',
+                                'rgba(56, 189, 248, 0.6)'
+                            ],
+                            borderColor: [
+                                'rgba(2, 132, 199, 1)',
+                                'rgba(14, 165, 233, 1)',
+                                'rgba(56, 189, 248, 1)'
+                            ],
+                            borderWidth: 1,
+                            borderRadius: 4,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 100,
+                                grid: { color: 'rgba(200, 200, 200, 0.2)' },
+                                ticks: { color: '#57534e' },
+                                title: {
+                                    display: true,
+                                    text: 'Relative Capability (Higher is Better)',
+                                    color: '#292524'
+                                }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: '#57534e' },
+                                title: {
+                                    display: true,
+                                    text: 'Gemini Model',
+                                    color: '#292524'
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: { color: '#292524' }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Conceptual Model Performance Comparison',
+                                padding: { top: 10, bottom: 20 },
+                                font: { size: 16, weight: '600' },
+                                color: '#0369a1'
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(0,0,0,0.7)',
+                                titleFont: { size: 14 },
+                                bodyFont: { size: 12 },
+                                callbacks: {
+                                    label: function(context) {
+                                        let label = context.dataset.label || '';
+                                        if (label) {
+                                            label += ': ';
+                                        }
+                                        if (context.parsed.y !== null) {
+                                            label += context.parsed.y + '%';
+                                        }
+                                        return label;
+                                    }
+                                }
+                            }
+                        },
+                        animation: {
+                            duration: 1000,
+                            easing: 'easeInOutQuart'
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+    <script src="js/navigation.js"></script>
+</body>
+</html>

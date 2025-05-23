@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google I/O 2025: Other Notable Mentions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Visualization & Content Choices:
+        - Overall Intro: Text block. Goal: Inform about diverse announcements. Method: HTML paragraph. Justification: Provides a summary of other key areas.
+        - LearnLM: Text block. Goal: Explain AI for learning. Method: HTML paragraph. Justification: Details a new educational focus.
+        - Synth ID Detector: Text block. Goal: Explain AI content detection. Method: HTML paragraph. Justification: Highlights efforts in content authenticity.
+        - Android Updates: Text block. Goal: Detail OS and device enhancements. Method: HTML paragraph. Justification: Covers core mobile platform improvements.
+        - Google Play Updates: Text block. Goal: Detail app store improvements. Method: HTML paragraph. Justification: Covers developer and user experience in Play Store.
+        - External Links: List of links. Goal: Provide resources. Method: HTML list. Justification: Centralized access to official articles.
+        - CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 280px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 320px;
+            }
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a8a29e;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #78716c;
+        }
+        .nav-link {
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #fff;
+            background-color: #0284c7;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        sky: {
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                        },
+                        stone: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            300: '#d6d3d1',
+                            400: '#a8a29e',
+                            500: '#78716c',
+                            600: '#57534e',
+                            800: '#292524',
+                        },
+                        emerald: {
+                            100: '#d1fae5',
+                            600: '#059669',
+                            800: '#065f46',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-100 text-stone-800 min-h-screen flex flex-col items-center antialiased">
+
+    <header class="w-full bg-sky-700 text-white p-5 md:p-6 text-center shadow-lg sticky top-0 z-50">
+        <h1 class="text-2xl sm:text-3xl font-bold">Google I/O 2025: Other Notable Mentions</h1>
+    </header>
+
+    <nav class="w-full bg-sky-800 shadow-md z-40">
+        <div class="container mx-auto px-4 py-3">
+            <div id="main-nav" class="flex flex-wrap justify-center gap-x-4 gap-y-2 overflow-x-auto pb-2">
+                </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-6 lg:p-8 max-w-5xl w-full mt-4">
+
+        <section id="intro" class="bg-white p-6 rounded-xl shadow-xl mb-8 ring-1 ring-black ring-opacity-5">
+            <h2 class="text-2xl font-semibold text-sky-600 mb-4">Diverse Innovations Across the Google Ecosystem</h2>
+            <p class="text-lg mb-3 leading-relaxed">
+                Beyond the major AI-centric announcements, Google I/O 2025 also featured a range of other significant updates and new initiatives across various Google products and platforms. These innovations demonstrate Google's continued commitment to improving user experiences, enhancing developer tools, and exploring new frontiers in technology.
+            </p>
+            <p class="text-lg leading-relaxed">
+                This section highlights some of these key developments, showcasing the breadth of Google's impact.
+            </p>
+        </section>
+
+        <section id="mentions" class="space-y-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-sky-700 mb-6 text-center">Key Diverse Announcements</h2>
+
+            <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                    <span class="text-2xl mr-3">📚</span> LearnLM: AI for Learning
+                </h3>
+                <p class="mb-4 text-stone-600 leading-relaxed">
+                    LearnLM is a family of fine-tuned models specifically designed for learning, now integrated directly into Gemini 2.5. It aims to become the world's leading model for learning, featuring advanced STEM reasoning, multimodal understanding, and sophisticated quizzing and assessment capabilities.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                    <span class="text-2xl mr-3">🛡️</span> Synth ID Detector: Identifying AI-Generated Content
+                </h3>
+                <p class="mb-4 text-stone-600 leading-relaxed">
+                    Google has made it easier to detect AI-generated content with the Synth ID Detector. This verification portal helps identify AI content and has already watermarked over 10 billion pieces of content, emphasizing Google's efforts in content authenticity and transparency.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                    <span class="text-2xl mr-3">📱</span> Android Updates (Beyond XR)
+                </h3>
+                <p class="mb-4 text-stone-600 leading-relaxed">
+                    Beyond the new Android XR platform, several other significant updates were announced for the core Android operating system and devices:
+                </p>
+                <ul class="list-disc list-inside text-stone-600 space-y-1">
+                    <li>**Android 16 Live Updates:** New notification templates for tracking user-initiated journeys (e.g., rideshares, deliveries, navigation).</li>
+                    <li>**Material 3 Expressive:** A new UI design system for Wear OS 6, bringing personalized visuals and motion to smartwatches and other Android surfaces.</li>
+                    <li>**Enhanced Camera & Media Features:** Includes a software low-light boost for improved photography and native PCM offload for better battery savings during audio playback.</li>
+                    <li>**Expanded In-Car Experiences:** New Gemini integrations and support for more app categories, including games and video, for Android Automotive OS.</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                    <span class="text-2xl mr-3">🎮</span> Google Play Updates
+                </h3>
+                <p class="mb-4 text-stone-600 leading-relaxed">
+                    Google Play received updates aimed at boosting app discovery, engagement, and revenue for developers, while also improving the user experience:
+                </p>
+                <ul class="list-disc list-inside text-stone-600 space-y-1">
+                    <li>**New Play Console Overview Pages:** Provide developers with more actionable insights and suggestions for app performance.</li>
+                    <li>**Hero Content and YouTube Playlist Carousels:** New ways for developers to showcase their apps and drive user engagement directly on Play Store listings.</li>
+                    <li>**Multi-Product Checkout for Subscriptions:** Streamlines the purchase flow, allowing users to buy subscription add-ons alongside base subscriptions under a single, aligned payment schedule.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="resources" class="bg-white p-6 rounded-xl shadow-xl mt-10 ring-1 ring-black ring-opacity-5">
+            <h2 class="text-2xl font-semibold text-sky-600 mb-4">Further Reading</h2>
+            <ul class="list-none space-y-3">
+                <li>
+                    <a href="https://research.google/blog/google-research-at-google-io-2025/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">📰</span> Google Research Blog: Google Research at Google I/O 2025
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.hindustantimes.com/technology/top-25-highlights-from-google-i-o-2025-101747915562635.html" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">🗞️</span> Hindustan Times: Top 25 highlights from Google I/O 2025
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://android-developers.googleblog.com/2025/05/16-things-to-know-for-android-developers-google-io-2025.html" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">🔗</span> Android Developers Blog: 16 things to know for Android developers
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://android-developers.googleblog.com/2025/05/io-2025-whats-new-in-google-play.html" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">🔗</span> Android Developers Blog: What's new in Google Play
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="w-full bg-sky-800 text-white p-6 text-center mt-12">
+        <p class="text-sm">© 2025 - Interactive Recap of Google I/O AI Mode in Search. For informational purposes.</p>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+</body>
+</html>

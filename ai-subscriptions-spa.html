@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google I/O 2025: AI Subscriptions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="js/navigation.js"></script>
+    <!-- Visualization & Content Choices:
+        - Overall Intro: Text block. Goal: Inform about the new subscription model. Method: HTML paragraph. Justification: Explains the shift in access.
+        - AI Ultra: Text block. Goal: Detail premium tier benefits. Method: HTML paragraph. Justification: Highlights high-value features.
+        - AI Pro: Text block. Goal: Detail standard tier benefits. Method: HTML paragraph. Justification: Explains the updated existing plan.
+        - Value Comparison Chart: Bar chart. Goal: Illustrate conceptual value/features. Method: Chart.js (Canvas). Justification: Provides a visual comparison of the plans.
+        - External Links: List of links. Goal: Provide resources. Method: HTML list. Justification: Centralized access to official announcements and articles.
+        - CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+</head>
+<body class="bg-stone-100 text-stone-800 min-h-screen flex flex-col items-center antialiased">
+
+    <header class="w-full bg-sky-700 text-white p-5 md:p-6 text-center shadow-lg sticky top-0 z-50">
+        <h1 class="text-2xl sm:text-3xl font-bold">Google I/O 2025: AI Subscriptions</h1>
+    </header>
+
+    <nav class="w-full bg-sky-800 shadow-md z-40">
+        <div class="container mx-auto px-4 py-3">
+            <div id="main-nav" class="flex flex-wrap justify-center gap-x-4 gap-y-2 overflow-x-auto pb-2">
+                </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-6 lg:p-8 max-w-5xl w-full mt-4">
+
+        <section id="intro" class="bg-white p-6 rounded-xl shadow-xl mb-8 ring-1 ring-black ring-opacity-5">
+            <h2 class="text-2xl font-semibold text-sky-600 mb-4">New Tiers for Advanced AI Access</h2>
+            <p class="text-lg mb-3 leading-relaxed">
+                At Google I/O 2025, Google introduced new subscription tiers: Google AI Pro and Google AI Ultra. These plans are designed to offer users deeper and more extensive access to Google's most advanced AI tools and capabilities, accompanied by higher usage limits and premium features.
+            </p>
+            <p class="text-lg leading-relaxed">
+                This move signifies Google's strategy to provide tailored AI experiences, catering to both general users seeking enhanced features and power users or professionals who require peak performance and early access to cutting-edge innovations.
+            </p>
+        </section>
+
+        <section id="plans" class="space-y-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-sky-700 mb-6 text-center">Understanding the AI Plans</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                    <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                        <span class="text-2xl mr-3">💎</span> Google AI Ultra
+                    </h3>
+                    <p class="mb-4 text-stone-600 leading-relaxed">
+                        This is Google's flagship and most powerful AI subscription. It offers the highest usage limits and exclusive access to Google's most capable Gemini models, including Gemini 2.5 Pro with DeepThink.
+                    </p>
+                    <ul class="list-disc list-inside text-stone-600 space-y-1">
+                        <li>Highest usage limits for AI models</li>
+                        <li>Early access to experimental features (e.g., Project Mariner, Veo 3)</li>
+                        <li>30TB of storage across Google products</li>
+                        <li>YouTube Premium access</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                    <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                        <span class="text-2xl mr-3">✨</span> Google AI Pro
+                    </h3>
+                    <p class="mb-4 text-stone-600 leading-relaxed">
+                        This plan is the rebranded existing Premium plan, now offering a suite of enhanced AI features. It provides a comprehensive set of AI products with higher usage limits than the free versions.
+                    </p>
+                    <ul class="list-disc list-inside text-stone-600 space-y-1">
+                        <li>Access to Gemini Advanced</li>
+                        <li>Includes AI tools like Flow and NotebookLM</li>
+                        <li>Enhanced features for summarization, idea generation</li>
+                        <li>Integration of Gemini into Google Workspace tools</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                    <span class="text-2xl mr-3">📈</span> Conceptual Value Comparison
+                </h3>
+                <p class="mb-4 text-stone-600 leading-relaxed">
+                    This chart provides a conceptual comparison of the value proposition of the different AI plans, highlighting the increasing capabilities and benefits with each tier.
+                </p>
+                <div class="chart-container bg-stone-50 p-3 rounded-lg shadow-inner">
+                    <canvas id="aiSubscriptionChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="bg-white p-6 rounded-xl shadow-xl mt-10 ring-1 ring-black ring-opacity-5">
+            <h2 class="text-2xl font-semibold text-sky-600 mb-4">Further Reading</h2>
+            <ul class="list-none space-y-3">
+                <li>
+                    <a href="https://www.indiatoday.in/technology/news/story/google-io-2025-if-you-are-onboard-ai-hype-google-wants-you-to-subscribe-to-ai-pro-and-ai-ultra-plans-2727975-2025-05-21" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">🗞️</span> India Today: Google I/O 2025: AI Pro and AI Ultra plans
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.zdnet.com/article/everything-google-unveiled-at-io-2025-gemini-ai-search-smart-glasses-more/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">📰</span> ZDNet: Everything Google unveiled at I/O 2025
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="w-full bg-sky-800 text-white p-6 text-center mt-12">
+        <p class="text-sm">© 2025 - Interactive Recap of Google I/O AI Mode in Search. For informational purposes.</p>
+    </footer>
+
+    <script>
+        const navLinksData = [
+            { title: 'Gemini & AI Everywhere', file: 'gemini-ai-everywhere-spa.html' },
+            { title: 'Gemini Updates', file: 'gemini-updates-spa.html' },
+            { title: 'AI Mode in Search', file: 'ai-mode-search-spa.html' },
+            { title: 'Google Beam', file: 'google-beam-spa.html' },
+            { title: 'Generative AI for Creators', file: 'generative-ai-creators-spa.html' },
+            { title: 'Android XR', file: 'android-xr-spa.html' },
+            { title: 'Gemini Live', file: 'gemini-live-spa.html' },
+            { title: 'AI Subscriptions', file: 'ai-subscriptions-spa.html' },
+            { title: 'Workspace & Tools', file: 'workspace-tools-spa.html' },
+            { title: 'Developer Tools', file: 'developer-tools-spa.html' },
+            { title: 'Healthcare AI', file: 'healthcare-ai-spa.html' },
+            { title: 'Other Mentions', file: 'other-mentions-spa.html' },
+            { title: 'The Future is AI-Powered', file: 'future-ai-powered-spa.html' }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainNav = document.getElementById('main-nav');
+            const currentFileName = window.location.pathname.split('/').pop();
+
+            navLinksData.forEach(link => {
+                const a = document.createElement('a');
+                a.href = link.file;
+                a.textContent = link.title;
+                a.classList.add('nav-link', 'block', 'px-3', 'py-2', 'rounded-md', 'text-sm', 'font-medium', 'text-white', 'hover:bg-sky-600', 'transition-colors', 'duration-200', 'whitespace-nowrap');
+                if (link.file === currentFileName) {
+                    a.classList.add('bg-sky-600', 'font-bold');
+                }
+                mainNav.appendChild(a);
+            });
+
+            const ctx = document.getElementById('aiSubscriptionChart').getContext('2d');
+            if (ctx) {
+                const aiSubscriptionChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Free Tier', 'AI Pro', 'AI Ultra'],
+                        datasets: [{
+                            label: 'Conceptual Feature Access & Limits',
+                            data: [30, 70, 100],
+                            backgroundColor: [
+                                'rgba(168, 162, 158, 0.6)', // stone-400
+                                'rgba(14, 165, 233, 0.6)', // sky-500
+                                'rgba(2, 132, 199, 0.6)'  // sky-600
+                            ],
+                            borderColor: [
+                                'rgba(168, 162, 158, 1)',
+                                'rgba(14, 165, 233, 1)',
+                                'rgba(2, 132, 199, 1)'
+                            ],
+                            borderWidth: 1,
+                            borderRadius: 4,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 100,
+                                grid: { color: 'rgba(200, 200, 200, 0.2)' },
+                                ticks: { color: '#57534e' },
+                                title: {
+                                    display: true,
+                                    text: 'Relative Value / Capabilities (%)',
+                                    color: '#292524'
+                                }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: '#57534e' },
+                                title: {
+                                    display: true,
+                                    text: 'Subscription Tier',
+                                    color: '#292524'
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: { color: '#292524' }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Conceptual Comparison of AI Subscription Plans',
+                                padding: { top: 10, bottom: 20 },
+                                font: { size: 16, weight: '600' },
+                                color: '#0369a1'
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(0,0,0,0.7)',
+                                titleFont: { size: 14 },
+                                bodyFont: { size: 12 },
+                                callbacks: {
+                                    label: function(context) {
+                                        let label = context.dataset.label || '';
+                                        if (label) {
+                                            label += ': ';
+                                        }
+                                        if (context.parsed.y !== null) {
+                                            label += context.parsed.y + '%';
+                                        }
+                                        return label;
+                                    }
+                                }
+                            }
+                        },
+                        animation: {
+                            duration: 1000,
+                            easing: 'easeInOutQuart'
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

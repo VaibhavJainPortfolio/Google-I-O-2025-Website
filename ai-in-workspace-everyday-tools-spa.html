@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google I/O 2025: AI in Workspace & Everyday Tools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="js/navigation.js"></script>
+    <!-- Visualization & Content Choices:
+        - Overall Intro: Text block. Goal: Inform about AI's pervasive role. Method: HTML paragraph. Justification: Sets context for practical AI applications.
+        - Gmail Smart Replies: Text block. Goal: Explain personalized assistance. Method: HTML paragraph. Justification: Details a common productivity enhancement.
+        - Google Meet Translation: Text block + Demo Link. Goal: Explain real-time communication. Method: HTML paragraph. Justification: Highlights a significant communication barrier removal.
+        - Google Canvas: Text block. Goal: Explain creative tool enhancement. Method: HTML paragraph. Justification: Shows AI's role in creative workflows.
+        - Gemini in Chrome/Workspace: Text block. Goal: Explain contextual assistance. Method: HTML paragraph. Justification: Details pervasive AI support.
+        - External Links: List of links. Goal: Provide resources. Method: HTML list. Justification: Centralized access to official demos and articles.
+        - CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+</head>
+<body class="bg-stone-100 text-stone-800 min-h-screen flex flex-col items-center antialiased">
+
+    <header class="w-full bg-sky-700 text-white p-5 md:p-6 text-center shadow-lg sticky top-0 z-50">
+        <h1 class="text-2xl sm:text-3xl font-bold">Google I/O 2025: AI in Workspace & Everyday Tools</h1>
+    </header>
+
+    <nav class="w-full bg-sky-800 shadow-md z-40">
+        <div class="container mx-auto px-4 py-3">
+            <div id="main-nav" class="flex flex-wrap justify-center gap-x-4 gap-y-2 overflow-x-auto pb-2">
+                </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-6 lg:p-8 max-w-5xl w-full mt-4">
+
+        <section id="intro" class="bg-white p-6 rounded-xl shadow-xl mb-8 ring-1 ring-black ring-opacity-5">
+            <h2 class="text-2xl font-semibold text-sky-600 mb-4">AI Enhancing Daily Productivity and Communication</h2>
+            <p class="text-lg mb-3 leading-relaxed">
+                Google I/O 2025 showcased how AI is being deeply embedded into widely used Google products, transforming everyday tools into more intelligent, efficient, and personalized assistants. This integration aims to streamline workflows and enhance communication across various platforms.
+            </p>
+            <p class="text-lg leading-relaxed">
+                From smarter email management to seamless real-time translation in meetings, AI is becoming an indispensable part of how we work and interact daily.
+            </p>
+        </section>
+
+        <section id="features" class="space-y-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-sky-700 mb-6 text-center">Key AI Integrations</h2>
+
+            <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                    <span class="text-2xl mr-3">📧</span> Gmail Smart Replies
+                </h3>
+                <p class="mb-4 text-stone-600 leading-relaxed">
+                    Gmail is getting even more personalized smart replies. These AI-powered suggestions are now based on your past emails and files stored in Google Drive, and they analyze your writing style to suggest responses that sound authentically like you, adapting to your typical greetings, tone, and even favorite word choices.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                    <span class="text-2xl mr-3">🗣️</span> Google Meet Real-time Translation
+                </h3>
+                <p class="mb-4 text-stone-600 leading-relaxed">
+                    Google Meet now offers real-time speech translation. This powerful AI-powered feature converts spoken words into a listener's preferred language almost instantaneously, while remarkably preserving the speaker's original voice, tone, and emotional inflection. This facilitates seamless communication with individuals who speak different languages.
+                </p>
+                <a href="https://www.businesstoday.in/technology/news/story/google-io-2025-google-meet-can-now-translate-speech-in-real-time-using-ai-477260-2025-05-21" target="_blank" rel="noopener noreferrer" class="inline-block bg-sky-100 text-sky-700 px-4 py-2 rounded-lg hover:bg-sky-200 transition duration-150 text-sm font-medium">
+                    Watch Meet Translation Demo & Blog →
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                    <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                        <span class="text-2xl mr-3">🎨</span> Google Canvas with Gemini 2.5 Support
+                    </h3>
+                    <p class="text-stone-600 leading-relaxed">
+                        The Google Canvas tool is now more powerful than ever with enhanced Gemini 2.5 support. This integration boosts its capabilities for creative tasks, supporting dynamic content creation such as infographics, quizzes, and even podcasts.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5">
+                    <h3 class="text-xl font-semibold text-sky-600 mb-3 flex items-center">
+                        <span class="text-2xl mr-3">🌐</span> Gemini in Chrome & Workspace
+                    </h3>
+                    <p class="text-stone-600 leading-relaxed">
+                        For Google AI Ultra subscribers, Gemini's AI capabilities are now available directly within the Chrome browser, offering dynamic help based on the content of the page you're viewing. Gemini is also embedded directly into Google Workspace apps like Gmail, Docs, and the new Vids platform, streamlining productivity tasks with smart contextual assistance.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="bg-white p-6 rounded-xl shadow-xl mt-10 ring-1 ring-black ring-opacity-5">
+            <h2 class="text-2xl font-semibold text-sky-600 mb-4">Demos & Further Reading</h2>
+            <ul class="list-none space-y-3">
+                <li>
+                    <a href="https://www.businesstoday.in/technology/news/story/google-io-2025-google-meet-can-now-translate-speech-in-real-time-using-ai-477260-2025-05-21" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">📰</span> Business Today: Google Meet Real-time Translation
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.hindustantimes.com/technology/top-25-highlights-from-google-i-o-2025-101747915562635.html" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">🗞️</span> Hindustan Times: Top 25 highlights from Google I/O 2025
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.indiatoday.in/technology/news/story/google-io-2025-if-you-are-onboard-ai-hype-google-wants-you-to-subscribe-to-ai-pro-and-ai-ultra-plans-2727975-2025-05-21" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">🔗</span> India Today: AI Pro and AI Ultra plans (includes Workspace mentions)
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="w-full bg-sky-800 text-white p-6 text-center mt-12">
+        <p class="text-sm">© 2025 - Interactive Recap of Google I/O AI Mode in Search. For informational purposes.</p>
+    </footer>
+
+    <script>
+        const navLinksData = [
+            { title: 'Gemini & AI Everywhere', file: 'gemini-ai-everywhere-spa.html' },
+            { title: 'Gemini Updates', file: 'gemini-updates-spa.html' },
+            { title: 'AI Mode in Search', file: 'ai-mode-search-spa.html' },
+            { title: 'Google Beam', file: 'google-beam-spa.html' },
+            { title: 'Generative AI for Creators', file: 'generative-ai-creators-spa.html' },
+            { title: 'Android XR', file: 'android-xr-spa.html' },
+            { title: 'Gemini Live', file: 'gemini-live-spa.html' },
+            { title: 'AI Subscriptions', file: 'ai-subscriptions-spa.html' },
+            { title: 'Workspace & Tools', file: 'workspace-tools-spa.html' },
+            { title: 'Developer Tools', file: 'developer-tools-spa.html' },
+            { title: 'Healthcare AI', file: 'healthcare-ai-spa.html' },
+            { title: 'Other Mentions', file: 'other-mentions-spa.html' },
+            { title: 'The Future is AI-Powered', file: 'future-ai-powered-spa.html' }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainNav = document.getElementById('main-nav');
+            const currentFileName = window.location.pathname.split('/').pop();
+
+            navLinksData.forEach(link => {
+                const a = document.createElement('a');
+                a.href = link.file;
+                a.textContent = link.title;
+                a.classList.add('nav-link', 'block', 'px-3', 'py-2', 'rounded-md', 'text-sm', 'font-medium', 'text-white', 'hover:bg-sky-600', 'transition-colors', 'duration-200', 'whitespace-nowrap');
+                if (link.file === currentFileName) {
+                    a.classList.add('bg-sky-600', 'font-bold');
+                }
+                mainNav.appendChild(a);
+            });
+        });
+    </script>
+</body>
+</html>

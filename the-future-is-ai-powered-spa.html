@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google I/O 2025: The Future is AI-Powered</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Visualization & Content Choices:
+        - Concluding Message: Text block. Goal: Summarize the overarching theme. Method: HTML paragraph. Justification: Provides a strong closing statement.
+        - AI Pervasiveness Placeholder: Visual placeholder. Goal: Represent AI's widespread integration. Method: HTML div with text/icon. Justification: Conveys the concept visually without external images.
+        - External Links: List of links. Goal: Provide resources. Method: HTML list. Justification: Centralized access to official information.
+        - CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 280px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 320px;
+            }
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a8a29e;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #78716c;
+        }
+        .nav-link {
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #fff;
+            background-color: #0284c7;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        sky: {
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                        },
+                        stone: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            300: '#d6d3d1',
+                            400: '#a8a29e',
+                            500: '#78716c',
+                            600: '#57534e',
+                            800: '#292524',
+                        },
+                        emerald: {
+                            100: '#d1fae5',
+                            600: '#059669',
+                            800: '#065f46',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-100 text-stone-800 min-h-screen flex flex-col items-center antialiased">
+
+    <header class="w-full bg-sky-700 text-white p-5 md:p-6 text-center shadow-lg sticky top-0 z-50">
+        <h1 class="text-2xl sm:text-3xl font-bold">Google I/O 2025: The Future is AI-Powered</h1>
+    </header>
+
+    <nav class="w-full bg-sky-800 shadow-md z-40">
+        <div class="container mx-auto px-4 py-3">
+            <div id="main-nav" class="flex flex-wrap justify-center gap-x-4 gap-y-2 overflow-x-auto pb-2">
+                </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-6 lg:p-8 max-w-5xl w-full mt-4">
+
+        <section id="intro" class="bg-white p-6 rounded-xl shadow-xl mb-8 ring-1 ring-black ring-opacity-5">
+            <h2 class="text-2xl font-semibold text-sky-600 mb-4">Embracing an AI-First Future</h2>
+            <p class="text-lg mb-3 leading-relaxed">
+                Google I/O 2025 unequivocally reinforced Google's vision for an AI-first future. The comprehensive array of announcements, from foundational model upgrades to new product integrations and developer tools, demonstrated a clear trajectory: AI is rapidly becoming an integral and indispensable part of our daily digital interactions.
+            </p>
+            <p class="text-lg leading-relaxed">
+                This conference showcased the transformative power of AI in shaping the next generation of helpful, intuitive, and seamlessly integrated experiences across every facet of our digital lives. The future, as envisioned by Google, is truly AI-powered.
+            </p>
+        </section>
+
+        <section id="vision" class="bg-white p-6 rounded-xl shadow-xl mb-8 ring-1 ring-black ring-opacity-5">
+            <h2 class="text-2xl font-semibold text-sky-600 mb-4 flex items-center">
+                <span class="text-2xl mr-3">✨</span> A Seamlessly Integrated AI World
+            </h2>
+            <p class="mb-4 text-stone-600 leading-relaxed">
+                The innovations presented at I/O 2025 highlight a future where AI is not just a feature, but the underlying intelligence that makes technology more personal, proactive, and powerful. This includes:
+            </p>
+            <ul class="list-disc list-inside text-stone-600 space-y-2 mb-4">
+                <li>**Intelligent Assistance:** AI that understands context and takes action on your behalf.</li>
+                <li>**Natural Interaction:** Communicating with technology through natural language and visual cues.</li>
+                <li>**Enhanced Creativity:** Tools that empower everyone to create and express themselves with AI.</li>
+                <li>**Problem Solving:** AI that tackles complex challenges in areas like healthcare and scientific research.</li>
+            </ul>
+            <div class="my-4 p-6 border-2 border-dashed border-stone-300 rounded-lg text-center bg-stone-50 text-stone-500">
+                <span class="text-4xl block mb-2">🌍🤖</span>
+                Visual Placeholder: AI integrated into every aspect of our world!
+            </div>
+        </section>
+
+        <section id="resources" class="bg-white p-6 rounded-xl shadow-xl mt-10 ring-1 ring-black ring-opacity-5">
+            <h2 class="text-2xl font-semibold text-sky-600 mb-4">Further Exploration</h2>
+            <ul class="list-none space-y-3">
+                <li>
+                    <a href="https://blog.google/technology/ai/google-io-2025-all-our-announcements/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">📰</span> Google Blog: 100 things we announced at I/O
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://io.google/2025/explore/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-800 hover:underline font-medium group flex items-center">
+                        <span class="text-xl mr-2">🌐</span> Google I/O 2025 Official Page
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity ml-1">→</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="w-full bg-sky-800 text-white p-6 text-center mt-12">
+        <p class="text-sm">© 2025 - Interactive Recap of Google I/O AI Mode in Search. For informational purposes.</p>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+</body>
+</html>
