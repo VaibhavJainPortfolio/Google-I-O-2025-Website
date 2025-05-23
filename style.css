@@ -152,6 +152,18 @@ nav {
     }
 }
 
+/* Page transition effects */
+.page-transition {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.page-transition.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Responsive adjustments */
 @media (max-width: 640px) {
     .container {
@@ -190,4 +202,4 @@ nav {
     .chart-container {
         height: 320px;
     }
-} 
+}
