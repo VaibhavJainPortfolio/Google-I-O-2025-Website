@@ -23,10 +23,11 @@
         <h1 class="text-2xl sm:text-3xl font-bold">Google I/O 2025: AI in Workspace & Everyday Tools</h1>
     </header>
 
-    <nav class="w-full bg-sky-800 shadow-md z-40">
+    <nav class="w-full bg-sky-800 shadow-md z-40 sticky top-[72px] md:top-[88px]">
         <div class="container mx-auto px-4 py-3">
-            <div id="main-nav" class="flex flex-wrap justify-center gap-x-4 gap-y-2 overflow-x-auto pb-2">
-                </div>
+            <div id="main-nav" class="flex justify-between items-center">
+                <!-- Navigation will be inserted here by navigation.js -->
+            </div>
         </div>
     </nav>
 
@@ -116,38 +117,6 @@
         <p class="text-sm">© 2025 - Interactive Recap of Google I/O AI Mode in Search. For informational purposes.</p>
     </footer>
 
-    <script>
-        const navLinksData = [
-            { title: 'Gemini & AI Everywhere', file: 'gemini-ai-everywhere-spa.html' },
-            { title: 'Gemini Updates', file: 'gemini-updates-spa.html' },
-            { title: 'AI Mode in Search', file: 'ai-mode-search-spa.html' },
-            { title: 'Google Beam', file: 'google-beam-spa.html' },
-            { title: 'Generative AI for Creators', file: 'generative-ai-creators-spa.html' },
-            { title: 'Android XR', file: 'android-xr-spa.html' },
-            { title: 'Gemini Live', file: 'gemini-live-spa.html' },
-            { title: 'AI Subscriptions', file: 'ai-subscriptions-spa.html' },
-            { title: 'Workspace & Tools', file: 'workspace-tools-spa.html' },
-            { title: 'Developer Tools', file: 'developer-tools-spa.html' },
-            { title: 'Healthcare AI', file: 'healthcare-ai-spa.html' },
-            { title: 'Other Mentions', file: 'other-mentions-spa.html' },
-            { title: 'The Future is AI-Powered', file: 'future-ai-powered-spa.html' }
-        ];
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const mainNav = document.getElementById('main-nav');
-            const currentFileName = window.location.pathname.split('/').pop();
-
-            navLinksData.forEach(link => {
-                const a = document.createElement('a');
-                a.href = link.file;
-                a.textContent = link.title;
-                a.classList.add('nav-link', 'block', 'px-3', 'py-2', 'rounded-md', 'text-sm', 'font-medium', 'text-white', 'hover:bg-sky-600', 'transition-colors', 'duration-200', 'whitespace-nowrap');
-                if (link.file === currentFileName) {
-                    a.classList.add('bg-sky-600', 'font-bold');
-                }
-                mainNav.appendChild(a);
-            });
-        });
-    </script>
+    <script src="js/navigation.js"></script>
 </body>
 </html>
